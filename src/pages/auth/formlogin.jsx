@@ -31,7 +31,7 @@ export default function FormLogin({
       return alert("Por favor, preencha todos os campos!");
     }
 
-    const response = await axios.post("http://18.118.30.233/login", {
+    const response = await axios.post("http://18.118.30.233:80/login", {
       email,
       senha,
     });

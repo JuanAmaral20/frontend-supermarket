@@ -44,7 +44,7 @@ export function FormCriarConta({
       return alert("Por favor, preencha todos os campos!");
     }
 
-    const response = await axios.post("http://18.118.30.233/usuarios", {
+    const response = await axios.post("http://18.118.30.233:80/usuarios", {
       nome,
       cpf,
       email,

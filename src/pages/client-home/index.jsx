@@ -11,7 +11,7 @@ function ClientHome() {
   async function getProducts() {
     const token = parseCookies().token;
 
-    const response = await axios.get("http://18.118.30.233/produtos", {
+    const response = await axios.get("http://18.118.30.233:80/produtos", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

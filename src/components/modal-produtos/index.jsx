@@ -31,7 +31,7 @@ export const ModalProduto = ({
     };
 
     const response = await axios.put(
-      `http://18.118.30.233/produtos/${product.id}`,
+      `http://18.118.30.233:80/produtos/${product.id}`,
       produto,
       {
         headers: {

@@ -23,7 +23,7 @@ export const Teste = () => {
   async function getProducts() {
     const token = parseCookies().token;
 
-    const response = await axios.get("http://18.118.30.233/produtos", {
+    const response = await axios.get("http://18.118.30.233:80/produtos", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -41,7 +41,7 @@ export const Teste = () => {
     const token = parseCookies().token;
 
     const response = await axios.post(
-      "http://18.118.30.233/produtos",
+      "http://18.118.30.233:80/produtos",
       {
         nome: nomeProdRef.current.value,
         descricao: descricaoRef.current.value,
@@ -92,7 +92,7 @@ export const Teste = () => {
   async function deleteProduct(id) {
     const token = parseCookies().token;
 
-    await axios.delete(`http://18.118.30.233/produtos/${id}`, {
+    await axios.delete(`http://18.118.30.233:80/produtos/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
