@@ -21,14 +21,11 @@ export const UserTable = ({ getUsuarios, users, setUsers }) => {
   async function deletarUsuario(id) {
     const token = parseCookies().token;
 
-    const response = await axios.delete(
-      `http://localhost:3000/usuarios/${id}`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+    const response = await axios.delete(`http://18.118.30.233/usuarios/${id}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
 
     if (response.status === 204) {
       getUsuarios();
@@ -55,7 +52,7 @@ export const UserTable = ({ getUsuarios, users, setUsers }) => {
     };
 
     const response = await axios.put(
-      `http://localhost:3000/usuarios/${userSelected.id}`,
+      `http://18.118.30.233/usuarios/${userSelected.id}`,
       user,
       {
         headers: {

@@ -37,7 +37,7 @@ export const UsuariosAdmin = () => {
   async function getUsuarios() {
     const token = parseCookies().token;
 
-    const response = await axios.get("http://localhost:3000/usuarios", {
+    const response = await axios.get("http://18.118.30.233/usuarios", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -69,7 +69,7 @@ export const UsuariosAdmin = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/usuarios", {
+      await axios.post("http://18.118.30.233/usuarios", {
         nome,
         cpf,
         email,
