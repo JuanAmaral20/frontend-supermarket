@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 300px;
+  height: 80px;
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: #032886;
+  border-bottom: 1px solid #8e908e;
+}
+
+.img-logo-supermarket {
+  width: 50px;
+  height: 50px;
+}
+
+.name-supermarket {
+  color: white;
+}
+
+.logo-supermarket {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  gap: 10px;
+}
+
+.title-prod {
+  text-align: center;
+}
+
+.user-div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: #f2f2f2;
+
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.img-user {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid #8e908e;
+}
+
+.user {
+  margin-top: 10px;
+}
+
+section {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-product {
+  width: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-height: 400px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card-product:hover {
+  transform: scale(1.05);
+}
+
+.img-product {
+  width: 100%;
+  object-fit: contain;
+  height: 250px;
+}
+
+.container-card-data {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+}
+
+.name-product {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-card-promotion {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-old-promotion {
+  color: #8e908e;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.price-promotion {
+  font-weight: bold;
+}

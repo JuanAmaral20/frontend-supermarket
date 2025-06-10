@@ -1,0 +1,10 @@
+.container-admin {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  height: 100vh;
+}
+
+.container-main {
+  padding: 24px;
+}
